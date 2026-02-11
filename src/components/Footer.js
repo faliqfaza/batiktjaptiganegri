@@ -57,16 +57,6 @@ function Footer() {
               </ul>
             </div>
 
-            {/* Information */}
-            <div className="footer-column">
-              <h4 className="footer-title">Informasi</h4>
-              <ul className="footer-links">
-                <li><a href="#" className="footer-link">Cara Pemesanan</a></li>
-                <li><a href="#" className="footer-link">Metode Pembayaran</a></li>
-                <li><a href="#" className="footer-link">Kebijakan Privasi</a></li>
-                <li><a href="#" className="footer-link">Syarat & Ketentuan</a></li>
-              </ul>
-            </div>
 
             {/* Contact */}
             <div className="footer-column">
