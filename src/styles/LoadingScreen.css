@@ -32,6 +32,15 @@
   display: inline-block;
 }
 
+.loading-logo-image {
+  width: 70%; /* Sesuaikan ukuran gambar di dalam lingkaran */
+  height: 70%;
+  object-fit: contain;
+  z-index: 2;
+  /* Filter opsional agar logo terlihat lebih tajam di background putih */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
 .logo-circle {
   width: 120px;
   height: 120px;
@@ -42,6 +51,7 @@
   border-radius: 50%;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   position: relative;
+  overflow: visible; /* Biar efek pulse di ::before tidak terpotong */
 }
 
 .logo-circle::before {
@@ -150,7 +160,6 @@
   animation-delay: 3s;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .loading-title {
     font-size: 2rem;
@@ -165,8 +174,5 @@
     height: 100px;
   }
   
-  .logo-svg {
-    width: 65px;
-    height: 65px;
-  }
+  
 }

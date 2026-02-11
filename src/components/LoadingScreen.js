@@ -25,35 +25,30 @@ function LoadingScreen({ onLoadingComplete }) {
       <div className="loading-content">
         {/* Logo Animated */}
         <div className="loading-logo">
-          <div className="logo-circle pulse">
-            <svg viewBox="0 0 100 100" className="logo-svg">
-              <defs>
-                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style={{ stopColor: '#4A90E2', stopOpacity: 1 }} />
-                  <stop offset="100%" style={{ stopColor: '#357ABD', stopOpacity: 1 }} />
-                </linearGradient>
-              </defs>
-              <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" />
-              <text x="50" y="65" fontSize="50" fill="white" textAnchor="middle" fontWeight="bold">B</text>
-            </svg>
-          </div>
+            <div className="logo-circle pulse">
+            <img 
+                src="/logo.png" 
+                alt="Batik Tjap Tiga Negri" 
+                className="loading-logo-image" 
+            />
+            </div>
         </div>
 
         {/* Brand Name */}
         <h1 className="loading-title fade-in">
-          Batik Tjap <span className="text-gradient">Tiga Negri</span>
+        Batik Tjap Tiga Negri
         </h1>
         <p className="loading-subtitle fade-in">Warisan Budaya Indonesia</p>
 
-        {/* Progress Bar */}
+        {/* Progress Bar & Sisanya tetap sama */}
         <div className="loading-progress">
-          <div className="progress-bar">
+            <div className="progress-bar">
             <div 
-              className="progress-fill" 
-              style={{ width: `${progress}%` }}
+                className="progress-fill" 
+                style={{ width: `${progress}%` }}
             ></div>
-          </div>
-          <p className="progress-text">{progress}%</p>
+            </div>
+            <p className="progress-text">{progress}%</p>
         </div>
 
         {/* Decorative Elements */}
