@@ -12,9 +12,7 @@ function Home({ onAddToCart }) {
 
   return (
     <div className="home">
-      {/* Hero Section */}
       <section className="hero">
-        {/* Animated Background with Particles */}
         <div className="hero-background">
           <div className="hero-gradient"></div>
           <div className="hero-particles">
