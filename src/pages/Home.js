@@ -6,19 +6,6 @@ import '../styles/Home.css';
 
 function Home({ onAddToCart }) {
   const [isVisible, setIsVisible] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  
-  useEffect(() => {
-    setIsVisible(true);
-    window.scrollTo(0, 0);
-
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const featuredProducts = products.filter(product => product.featured);
 
